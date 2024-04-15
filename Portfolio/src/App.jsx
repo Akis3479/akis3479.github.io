@@ -1,9 +1,9 @@
 import styles from './App.module.css';
-import Navigationbar from './Components/Navbar/NavigationBar.jsx';
+import {Menu} from './Components/Menu/Menu';
 
 function App() {
-  return <Navigationbar></Navigationbar>
+  return <Menu />;
 
 }
 
-export default App
+export default App;
