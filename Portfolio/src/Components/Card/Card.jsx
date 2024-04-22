@@ -6,7 +6,7 @@ export const Card = ({isOpen}) => {
     return (
         <div className={`card-container ${isOpen}`}>
             <div className="card">
-                <img src={profile} />
+                    <img src={profile} loading="lazy" />
                 <div>
                     <h2>Akis Sougias</h2>
                     <h3>Frontend developer <br></br> Design Pattern Enthusiast</h3>

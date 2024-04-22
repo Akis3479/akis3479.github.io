@@ -40,7 +40,9 @@ export const Menu = () => {
 
   return (
     <>
-      <div className={`background ${openClass}`}></div>
+      <div className="blur-load">
+        <div className={`background ${openClass}`} loading="lazy"></div>
+      </div>
       <Card isOpen={openClass}/>
       <button className={`burger ${openClass}`} onClick={toggleMenu}></button>
       <div className={`menu ${openClass}`}>

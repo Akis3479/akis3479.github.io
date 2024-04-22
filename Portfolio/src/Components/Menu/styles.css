@@ -88,6 +88,12 @@ button {
   filter: blur(1.5rem);
 }
 
+.blur-load{
+  background-size: cover;
+  background-position: center;
+  background-image: url("./assets/bg-blur.jpg");
+}
+
 .burger {
   z-index: 3;
   top: 0;
