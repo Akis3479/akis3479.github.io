@@ -91,7 +91,7 @@ button {
 .blur-load{
   background-size: cover;
   background-position: center;
-  background-image: url("./assets/bg-blur.jpg");
+  background-image: url("./assets/blur-bg.jpg");
 }
 
 .burger {
