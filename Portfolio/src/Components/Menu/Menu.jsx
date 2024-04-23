@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { Card } from '../Card/Card';
+import { ReactTyped } from "react-typed";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -12,10 +13,9 @@ const navs = [
     <h2>About</h2>
     <nav>
       <a style={{ animationDelay: "0.7s" }}>Profile</a>
-      <a style={{ animationDelay: "0.8s" }}>Education</a>
-      <a style={{ animationDelay: "0.9s" }}>Work</a>
-      <a style={{ animationDelay: "1s" }}>Skills</a>
-      <a style={{ animationDelay: "1.1s" }}>Projects</a>
+      <a style={{ animationDelay: "0.8s" }}>Work</a>
+      <a style={{ animationDelay: "0.9s" }}>Skills</a>
+      <a style={{ animationDelay: "1s" }}>Projects</a>
     </nav>
   </div>,
   <div>
@@ -43,6 +43,11 @@ export const Menu = () => {
       <div className="blur-load">
         <div className={`background ${openClass}`} loading="lazy"></div>
       </div>
+      <div className={`typewriter ${openClass}`}>
+        <ReactTyped strings={["Coming soon..."]} typeSpeed={150} backSpeed={100} loop/>
+      </div>
+      <Card isOpen={openClass} title={"Profile"}/>
+      <Card isOpen={openClass}/>
       <Card isOpen={openClass}/>
       <button className={`burger ${openClass}`} onClick={toggleMenu}></button>
       <div className={`menu ${openClass}`}>

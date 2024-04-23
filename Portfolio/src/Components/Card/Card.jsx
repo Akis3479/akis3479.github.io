@@ -6,6 +6,7 @@ import "./styles.css";
 export const Card = ({ isOpen }) => {
     return (
         <div className={`card-container ${isOpen}`}>
+            <h1>Profile</h1>
             <div className="card">
                 <img src={profile} loading="lazy" />
                 <div>

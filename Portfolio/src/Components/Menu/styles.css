@@ -173,3 +173,15 @@ button {
 .menu a:hover::after {
   transform: scaleX(1);
 }
+
+.typewriter span {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-top: 14px ;
+  
+}
+
+.typewriter.open {
+  filter: blur(1.5rem);
+}
