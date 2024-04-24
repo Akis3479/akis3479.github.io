@@ -44,11 +44,9 @@ export const Menu = () => {
         <div className={`background ${openClass}`} loading="lazy"></div>
       </div>
       <div className={`typewriter ${openClass}`}>
-        <ReactTyped strings={["Coming soon..."]} typeSpeed={150} backSpeed={100} loop/>
+        <ReactTyped strings={["Hi!","Under Construction..."]} typeSpeed={60} backSpeed={50}/>
       </div>
       <Card isOpen={openClass} title={"Profile"}/>
-      <Card isOpen={openClass}/>
-      <Card isOpen={openClass}/>
       <button className={`burger ${openClass}`} onClick={toggleMenu}></button>
       <div className={`menu ${openClass}`}>
         <Swiper speed={750} modules={[Navigation]} navigation>
