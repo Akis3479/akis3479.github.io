@@ -80,4 +80,4 @@ Error generating stack: `+l.message+`
         --uib-speed: ${this.speed}s;
       }
       ${Ma}
-    `)}}var Em={register:(e="l-bouncy-arc")=>{customElements.get(e)||customElements.define(e,class extends Ia{})},element:Ia};const xm=()=>(Em.register(),R.jsx("div",{className:"backgroundDiv",children:R.jsx("l-bouncy-arc",{size:"110",speed:"1.65",color:"white"})}));function Tm(){const[e,t]=j.useState(!0);return j.useEffect(()=>{setTimeout(()=>t(!1),3300)},[]),e?R.jsx(xm,{}):R.jsx(R.Fragment,{children:R.jsx(wm,{})})}wl.createRoot(document.getElementById("root")).render(R.jsx(Q.StrictMode,{children:R.jsx(Tm,{})}));
+    `)}}var Em={register:(e="l-bouncy-arc")=>{customElements.get(e)||customElements.define(e,class extends Ia{})},element:Ia};const xm=()=>(Em.register(),R.jsx("div",{className:"backgroundDiv",children:R.jsx("l-bouncy-arc",{size:"110",speed:"1.65",color:"white"})}));function Tm(){const[e,t]=j.useState(!0);return j.useEffect(()=>{setTimeout(()=>t(!1),5300)},[]),e?R.jsx(xm,{}):R.jsx(R.Fragment,{children:R.jsx(wm,{})})}wl.createRoot(document.getElementById("root")).render(R.jsx(Q.StrictMode,{children:R.jsx(Tm,{})}));
