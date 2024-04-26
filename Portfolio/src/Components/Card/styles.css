@@ -18,7 +18,7 @@
     filter: blur(1.5rem);
   }
 
-  h1 {
+  .section-title {
     margin-bottom: 3%;
   }
   
@@ -81,6 +81,9 @@
   }
   
   @media (width <= 600px) {
+    .section-title{
+        display: none;
+    }
     .card {
       margin: 0 40px;
       padding-left: 50px;
