@@ -22,12 +22,15 @@ h4 {
 
 .section2-title {
     font-size: 32px;
-    margin-bottom: 24px;
+    margin-bottom: 30px;
 }
 
 .cards {
     display: flex;
-    gap: 30px;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 
 .card-1-page .card {
@@ -35,6 +38,11 @@ h4 {
     perspective: 1000px;
     width: 300px;
     height: 300px;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.card-1-page .card:hover {
+    transform: translateY(-10px); /* Example transformation on hover */
 }
 
 .card-1-page .card header {
@@ -70,6 +78,18 @@ h4 {
 .card-1-page .card .back p::-webkit-scrollbar {
     width: 0;  
     background: transparent;
+}
+
+/* Hide scrollbar track for Safari */
+.card-1-page .card .front p::-webkit-scrollbar-track,
+.card-1-page .card .back p::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Hide scrollbar thumb for Safari */
+.card-1-page .card .front p::-webkit-scrollbar-thumb,
+.card-1-page .card .back p::-webkit-scrollbar-thumb {
+    display: none;
 }
 
 .card-1-page .back {
@@ -132,18 +152,54 @@ h4 {
     overflow-y: auto;
 }
 
-
-@media (width <=960px) {
+@media (max-width: 963px) {
     .page.card-1-page h1 {
         margin-bottom: 35px;
     }
 
     .page.card-1-page {
-        margin-top: 5%;
+        margin-top: 360px;
     }
 
     .cards {
         flex-direction: column;
     }
 
+    .card-1-page .card {
+        animation: moveCardSmall 1.2s ease forwards;
+        opacity: 0;
+    }
+
+    @keyframes moveCardSmall {
+        from {
+            opacity: 0;
+            transform: translateY(-40px); /* Adjust starting position */
+            
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
 }
+
+@media (min-width: 964px) and (max-width: 1275px) {
+    .card-1-page .card {
+        animation: moveCardMedium 1.2s ease forwards;
+        opacity: 0;
+    }
+
+    @keyframes moveCardMedium {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+
