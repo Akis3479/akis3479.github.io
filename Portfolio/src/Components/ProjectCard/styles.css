@@ -152,6 +152,12 @@ h4 {
     overflow-y: auto;
 }
 
+.gitLink {
+    position:absolute;
+    bottom:3vh;
+    left:15vh;
+}
+
 @media (max-width: 963px) {
     .page.card-1-page h1 {
         margin-bottom: 35px;
