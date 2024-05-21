@@ -59,8 +59,8 @@ export const ProjectCard = ({ isOpen }) => {
                                 <var>{card.total}</var>
                                 <h3>{card.description}</h3>
                                 <h4>{card.footer}</h4>
-                                <a href={card.link} target="_blank"style={{display:"flex", alignItems:"center"}}>
-        <img src="github.svg" alt="Git logo" className="gitLink" style={{width:"10%", height:"10%"}}/></a>
+                                <a href={card.link} target="_blank" className="gitLink" >
+                                    <img src="github.svg" alt="Git logo"/></a>
                                 <div className="material-symbols-outlined"> more </div>
                             </div>
                             <div className="back">

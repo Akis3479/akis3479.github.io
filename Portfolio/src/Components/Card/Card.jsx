@@ -1,4 +1,4 @@
-import profile from './assets/image.jpg';
+import profile from './assets/image.webp';
 import ResumeDoc from './assets/resume.pdf';
 import "./styles.css";
 
