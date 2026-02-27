@@ -1,4 +1,5 @@
 import "./styles.css";
+import PropTypes from 'prop-types';
 
 const cards = [
     {
@@ -76,4 +77,8 @@ export const ProjectCard = ({ isOpen }) => {
             </div>
         </section>
     );
+};
+
+ProjectCard.propTypes = {
+    isOpen: PropTypes.string
 };

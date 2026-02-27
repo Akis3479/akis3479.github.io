@@ -1,6 +1,7 @@
 import profile from './assets/image.webp';
 import ResumeDoc from './assets/resume.pdf';
 import "./styles.css";
+import PropTypes from 'prop-types';
 
 
 export const Card = ({ isOpen }) => {
@@ -24,3 +25,7 @@ export const Card = ({ isOpen }) => {
         </div>
     );
 }
+
+Card.propTypes = {
+    isOpen: PropTypes.string
+};

@@ -10,7 +10,7 @@ import "./styles.css";
 import { useState } from "react";
 
 const navs = [
-  <div>
+  <div key="about">
     <h2>About</h2>
     <nav>
       <a style={{ animationDelay: "0.7s" }}>Profile</a>
@@ -19,7 +19,7 @@ const navs = [
       <a style={{ animationDelay: "1s" }}>Projects</a>
     </nav>
   </div>,
-  <div>
+  <div key="contact">
     <h2>Contact</h2>
     <nav>
       <a href="mailto:akis.sougias96@gmail.com" style={{ animationDelay: "0.8s", display:"flex", alignItems:"center" }}>
