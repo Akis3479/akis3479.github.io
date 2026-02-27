@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: center;
     margin: 0;
-    height: 100vh;
+    min-height: 100vh;
     background: transparent;
     color: #fdfcfd;
     font-family: "Euclid Circular A", "Poppins";
@@ -85,10 +85,8 @@
         display: none;
     }
     .card {
-      margin: 0 40px;
-      padding-left: 50px;
-      padding-right: 50px;
-      padding-bottom: 60px;
+      margin: 0 20px;
+      padding: 40px 24px;
       width: 100%;
       text-align: center;
       flex-direction: column;
