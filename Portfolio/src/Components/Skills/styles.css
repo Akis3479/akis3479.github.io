@@ -1,0 +1,58 @@
+.skills-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+    color: #fdfcfd;
+    background: transparent;
+    z-index: 2;
+    font-family: "Euclid Circular A", "Poppins";
+}
+
+.skills-page.open {
+    filter: blur(1.5rem);
+}
+
+.skills-page h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.skills-container {
+    background: #121017;
+    padding: 2rem;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    overflow-x: auto; /* allows horizontal scroll on very small screens */
+}
+
+.skills-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 600px) {
+    .skills-page {
+        padding: 1rem;
+    }
+
+    .skills-container {
+        padding: 1rem;
+        border-radius: 16px;
+    }
+
+    .skills-image {
+        /* This will allow it to wrap if the window is too small instead of breaking layout */
+        min-width: 300px;
+    }
+}

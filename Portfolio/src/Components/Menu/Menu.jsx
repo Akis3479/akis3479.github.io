@@ -2,6 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { Card } from '../Card/Card';
 import { ProjectCard } from '../ProjectCard/ProjectCard';
+import { Skills } from '../Skills/Skills';
 import { ReactTyped } from "react-typed";
 
 import "swiper/css";
@@ -48,6 +49,7 @@ export const Menu = () => {
         <ReactTyped strings={["Hi!","Under Construction..."]} typeSpeed={60} backSpeed={50}/>
       </div>
       <Card isOpen={openClass} title={"Profile"}/>
+      <Skills isOpen={openClass}/>
       <ProjectCard isOpen={openClass}/>
       <button className={`burger ${openClass}`} onClick={toggleMenu}></button>
       <div className={`menu ${openClass}`}>
