@@ -51,6 +51,7 @@ export const Menu = () => {
       <Card isOpen={openClass} title={"Profile"}/>
       <Skills isOpen={openClass}/>
       <ProjectCard isOpen={openClass}/>
+      <Skills isOpen={openClass}/>
       <button className={`burger ${openClass}`} onClick={toggleMenu}></button>
       <div className={`menu ${openClass}`}>
         <Swiper speed={750} modules={[Navigation]} navigation>
