@@ -19,7 +19,9 @@
   }
 
   .section-title {
-    margin-bottom: 3%;
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-weight: 500;
   }
   
   .card {
@@ -81,8 +83,10 @@
   }
   
   @media (width <= 600px) {
-    .section-title{
-        display: none;
+    .section-title {
+      font-size: 32px;
+      margin-bottom: 30px;
+      font-weight: 500;
     }
     .card {
       margin: 0 20px;

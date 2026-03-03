@@ -2,6 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { Card } from '../Card/Card';
 import { ProjectCard } from '../ProjectCard/ProjectCard';
+import { Skills } from '../Skills/Skills';
 import { ReactTyped } from "react-typed";
 
 import "swiper/css";
@@ -49,6 +50,7 @@ export const Menu = () => {
       </div>
       <Card isOpen={openClass} title={"Profile"}/>
       <ProjectCard isOpen={openClass}/>
+      <Skills isOpen={openClass}/>
       <button className={`burger ${openClass}`} onClick={toggleMenu}></button>
       <div className={`menu ${openClass}`}>
         <Swiper speed={750} modules={[Navigation]} navigation>
