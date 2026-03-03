@@ -49,6 +49,7 @@ export const Menu = () => {
         <ReactTyped strings={["Hi!","Under Construction..."]} typeSpeed={60} backSpeed={50}/>
       </div>
       <Card isOpen={openClass} title={"Profile"}/>
+      <Skills isOpen={openClass}/>
       <ProjectCard isOpen={openClass}/>
       <Skills isOpen={openClass}/>
       <button className={`burger ${openClass}`} onClick={toggleMenu}></button>
