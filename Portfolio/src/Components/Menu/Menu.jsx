@@ -24,13 +24,13 @@ const navs = [
     <h2>Contact</h2>
     <nav>
       <a href="mailto:akis.sougias96@gmail.com" style={{ animationDelay: "0.8s", display:"flex", alignItems:"center" }}>
-        <img src="email.svg" alt="email logo" style={{width:"15%", height:"15%", paddingRight:"10px"}}/>akis.sougias96</a>
+        <img src="email.svg" alt="email logo" loading="lazy" style={{width:"15%", height:"15%", paddingRight:"10px"}}/>akis.sougias96</a>
       <a href="https://www.instagram.com/akis_sougias/" target="_blank" style={{ animationDelay: "0.9s", display:"flex", alignItems:"center"}}>
-        <img src="instagram.svg" alt="Instagram logo" style={{width:"15%", height:"15%", paddingRight:"10px"}}/>Instagram</a>
+        <img src="instagram.svg" alt="Instagram logo" loading="lazy" style={{width:"15%", height:"15%", paddingRight:"10px"}}/>Instagram</a>
       <a href="https://github.com/Akis3479" target="_blank"style={{ animationDelay: "1s" , display:"flex", alignItems:"center"}}>
-        <img src="github.svg" alt="Git logo" style={{width:"15%", height:"15%", paddingRight:"10px"}}/>GitHub</a>
+        <img src="github.svg" alt="Git logo" loading="lazy" style={{width:"15%", height:"15%", paddingRight:"10px"}}/>GitHub</a>
       <a href="https://www.linkedin.com/in/akis-sougias/" target="_blank" style={{ animationDelay: "1.1s", display:"flex", alignItems:"center" }}>
-        <img src="linkedin.svg" alt="linkedin logo" style={{width:"15%", height:"15%", paddingRight:"10px"}}/>LinkedIn</a>
+        <img src="linkedin.svg" alt="linkedin logo" loading="lazy" style={{width:"15%", height:"15%", paddingRight:"10px"}}/>LinkedIn</a>
     </nav>
   </div>,
 ];
