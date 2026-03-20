@@ -3,7 +3,7 @@ import { Navigation } from "swiper/modules";
 import { Card } from '../Card/Card';
 import { ProjectCard } from '../ProjectCard/ProjectCard';
 import { Skills } from '../Skills/Skills';
-import { ReactTyped } from "react-typed";
+import { GithubStats } from '../GithubStats/GithubStats';
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -45,13 +45,10 @@ export const Menu = () => {
       <div className="blur-load">
         <div className={`background ${openClass}`} loading="lazy"></div>
       </div>
-      <div className={`typewriter ${openClass}`}>
-        <ReactTyped strings={["Hi!","Under Construction..."]} typeSpeed={60} backSpeed={50}/>
-      </div>
       <Card isOpen={openClass} title={"Profile"}/>
-      <Skills isOpen={openClass}/>
       <ProjectCard isOpen={openClass}/>
       <Skills isOpen={openClass}/>
+      <GithubStats isOpen={openClass}/>
       <button className={`burger ${openClass}`} onClick={toggleMenu}></button>
       <div className={`menu ${openClass}`}>
         <Swiper speed={750} modules={[Navigation]} navigation>
