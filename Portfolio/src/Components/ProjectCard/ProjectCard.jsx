@@ -57,7 +57,6 @@ export const ProjectCard = ({ isOpen }) => {
                                 <header>
                                     <h2>{card.name}</h2>
                                 </header>
-                                <var>{card.total}</var>
                                 <h3>{card.description}</h3>
                                 <h4>{card.footer}</h4>
                                 <a href={card.link} target="_blank" className="gitLink" >
