@@ -118,27 +118,21 @@ h4 {
     margin: 20px;
 }
 
-.card var {
-    font-style: normal;
-    font-size: 80px;
-    line-height: 1;
-}
-
 .card h3 {
     margin: 0 0 30px;
     font-weight: 500;
     font-size: 18px;
 }
 
-#blue :is(var, h2) {
+#blue h2 {
     color: #3b82f6;
 }
 
-#red :is(var, h2) {
+#red h2 {
     color: #e56363;
 }
 
-#green :is(var, h2) {
+#green h2 {
     color: #25b697;
 }
 
